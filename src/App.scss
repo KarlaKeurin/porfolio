@@ -1,0 +1,66 @@
+@import "./styles/variables.scss";
+
+#root {
+  margin: 0 auto;
+  padding: 0;
+  background-color: $neon-green;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+};
+
+@media (min-width: 320px) and (max-width: 508px) {
+  main {
+    .home-page,
+    .about-page,
+    .projects-page,
+    .contact-page {
+      scroll-margin-top: 60px;
+    }
+  }
+}
+
+@media (min-width: 509px) and (max-width: 768px) {
+  main {
+    .home-page,
+    .about-page,
+    .projects-page,
+    .contact-page {
+      scroll-margin-top: 50px;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  main {
+    .home-page,
+    .about-page,
+    .projects-page,
+    .contact-page {
+      scroll-margin-top: 70px;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  main {
+    .home-page,
+    .about-page,
+    .projects-page,
+    .contact-page {
+      scroll-margin-top: 80px;
+    }
+  }
+}

@@ -1,0 +1,232 @@
+@import "../variables.scss";
+
+.nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100vw;
+  background: $pink;
+  z-index: 10;
+  .logo-text {
+    color: $off-white;
+    font-family: "Bowlby One SC";
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: $off-white;
+    cursor: pointer;
+  }
+  .nav-list {
+    background: $off-white;
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      list-style: none;
+      justify-content: center;
+      li {
+        a {
+          color: $dark-grey;
+          font-family: Poppins;
+          font-style: normal;
+          text-decoration: none;
+          transition: all 400ms;
+          cursor: pointer;
+          &:hover {
+            color: $royal-blue;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 508px) {
+  .nav-bar{
+    height: 50px;
+    padding: 5px 10px;
+    .logo-text {
+      text-shadow: 3px 3px 0px $dark-grey;
+      font-size: 17px;
+    }
+    .menu-toggle {
+      display: block;
+      font-size: 25px;
+    }
+    .nav-list {
+      position: absolute;
+      top: 55px;
+      right: 15px;
+      border-radius: 8px;
+      border: 2px solid $dark-grey;
+      box-shadow: 3px 3px 0px $dark-grey;
+      width: 200px;
+
+      overflow: hidden;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.3s ease-in-out;
+
+      &.open {
+        transform: scaleY(1);
+      }
+      ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+        li {
+          padding: 8px 20px;
+          width: 100%;
+          a {
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 509px) and (max-width: 768px) {
+  .nav-bar{
+    height: 60px;
+    padding: 20px;
+    .logo-text {
+      text-shadow: 3px 3px 0px $dark-grey;
+      font-size: 20px;
+    }
+    .menu-toggle {
+      display: block;
+      font-size: 27px;
+    }
+    .nav-list {
+      position: absolute;
+      top: 67px;
+      right: 15px;
+      border-radius: 10px;
+      border: 2px solid $dark-grey;
+      box-shadow: 3px 3px 0px $dark-grey;
+      width: 200px;
+
+      overflow: hidden;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.3s ease-in-out;
+
+      &.open {
+        transform: scaleY(1);
+      }
+      ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+        li {
+          padding: 10px 25px;
+          width: 100%;
+          a {
+            font-size: 17px;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-bar{
+    height: 70px;
+    padding: 20px 35px;
+    .logo-text {
+      text-shadow: 4px 4px 0px $dark-grey;
+      font-size: 22px;
+    }
+    .nav-list {
+      border-radius: 20px;
+      border: 2px solid $dark-grey;
+      box-shadow: 4px 4px 0px $dark-grey;
+      ul {
+        padding: 5px 15px;
+        gap: 35px;
+        a {
+          font-size: 15px;
+          font-weight: 700;
+          letter-spacing: 0.2px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .nav-bar{
+    height: 80px;
+    padding: 30px 50px;
+    .logo-text {
+      text-shadow: 4px 4px 0px $dark-grey;
+      font-size: 24px;
+    }
+    .nav-list {
+      border-radius: 25px;
+      border: 2px solid $dark-grey;
+      box-shadow: 4px 4px 0px $dark-grey;
+      ul {
+        padding: 7px 20px;
+        gap: 40px;
+        li {
+          transition: transform 400ms;
+          a {
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+          }
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1201px) {
+  .nav-bar{
+    height: 80px;
+    padding: 30px 50px;
+    .logo-text {
+      text-shadow: 4px 4px 0px $dark-grey;
+      font-size: 24px;
+    }
+    .nav-list {
+      border-radius: 25px;
+      border: 2px solid $dark-grey;
+      box-shadow: 4px 4px 0px $dark-grey;
+      ul {
+        padding: 7px 20px;
+        gap: 40px;
+        li {
+          transition: all 400ms;
+          a {
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+          }
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}

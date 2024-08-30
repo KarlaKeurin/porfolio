@@ -1,0 +1,371 @@
+@import "../variables.scss";
+
+.about-page {
+  background: $pink;
+  .phrase-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $royal-blue;
+    flex-shrink: 0;
+    h2 {
+      color: $off-white;
+      z-index: 1;
+      font-family: Poppins;
+      font-style: normal;
+    }
+  }
+  .about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .about-me-box {
+      display: flex;
+      align-items: center;
+      .text p {
+        color: $off-white;
+        text-align: justify;
+        font-family: "Source Sans 3";
+        font-style: normal;
+      }
+    }
+    .my-skills {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        color: $off-white;
+        font-family: "Bowlby One SC";
+        font-style: normal;
+      }
+      .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        img {
+          border-radius: 50%;
+        }
+      }
+    }      
+  }
+}
+
+@media (min-width: 320px) and (max-width: 508px) {
+  .about-page {
+    border-radius: 0px 0px 45px 45px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    .phrase-about {
+      margin-right: 15px;
+      padding: 10px 10px 10px 15px;
+      border-radius: 0px 20px 20px 0px;
+      border-top: 2px solid $dark-grey;
+      border-right: 2px solid $dark-grey;
+      border-bottom: 2px solid $dark-grey;
+      box-shadow: 5px 5px 0px 0px $dark-grey, 0px 5px 0px 0px $dark-grey;
+      
+      h2 {
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 1px;
+      }
+    }
+    .about {
+      margin-top: 10px;
+      padding: 15px;
+      .about-me-box {
+        flex-direction: column;
+        .text p {
+          font-size: 17px;
+          font-weight: 650;
+          min-width: 300px;
+          text-indent: 1.5em;
+          line-height: 22px;
+        } 
+        img {
+          width: 240px;
+          margin-bottom: 15px;
+        }
+      }
+      .my-skills {
+        padding: 15px 0 10px;
+        h2 {
+          text-shadow: 3px 3px 0px $dark-grey;
+          font-size: 24px;
+          font-weight: 400;
+          letter-spacing: 2px;
+        }
+        .icons {
+          padding-top: 15px;
+          gap: 10px;
+          img {
+            width: 35px;
+            filter: drop-shadow(3px 3px 0px $dark-grey);
+          }
+        }
+      }      
+    }
+  }
+}
+
+@media (min-width: 509px) and (max-width: 768px) {
+  .about-page {
+    border-radius: 0px 0px 60px 60px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    .phrase-about {
+      padding: 12px 12px 12px 15px;
+      margin-right: 20px;
+      border-radius: 0px 20px 20px 0px;
+      border-top: 2.3px solid $dark-grey;
+      border-right: 2.3px solid $dark-grey;
+      border-bottom: 2.3px solid $dark-grey;
+      box-shadow: 5px 5px 0px 0px $dark-grey, 0px 5px 0px 0px $dark-grey;
+      
+      h2 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 1px;
+      }
+    }
+    .about {
+      margin-top: 15px;
+      padding: 15px;
+      .about-me-box {
+        flex-direction: column;
+        .text p {
+          font-size: 18px;
+          font-weight: 650;
+          min-width: 300px;
+          text-indent: 1.5em;
+          line-height: 23px;
+        } 
+        img {
+          width: 250px;
+          margin-bottom: 20px;
+        }
+      }
+      .my-skills {
+        padding: 20px 0 15px;
+        h2 {
+          text-shadow: 3px 3px 0px $dark-grey;
+          font-size: 28px;
+          font-weight: 400;
+          letter-spacing: 2px;
+        }
+        .icons {
+          padding-top: 15px;
+          gap: 15px;
+          img {
+            width: 40px;
+            filter: drop-shadow(3px 3px 0px $dark-grey);
+          }
+        }
+      }      
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-page {
+    border-radius: 0px 0px 80px 80px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    .phrase-about {
+      width: 96vw;
+      padding: 12px 12px 12px calc(4vw + 12px);
+      margin-right: 4vw;
+      border-radius: 0px 20px 20px 0px;
+      border-top: 3px solid $dark-grey;
+      border-right: 3px solid $dark-grey;
+      border-bottom: 3px solid $dark-grey;
+      box-shadow: 5px 5px 0px 0px $dark-grey, 0px 5px 0px 0px $dark-grey;
+    
+      h2 {
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 1px;
+      }
+    }
+    .about {
+      margin-top: 10px;
+      padding: 30px;
+      .about-me-box {
+        flex-direction: column;
+        .text p {
+          font-size: 20px;
+          font-weight: 650;
+          min-width: 300px;
+          max-width: 800px;
+          text-indent: 1.5em;
+          line-height: 25px;
+        } 
+        img {
+          width: 280px;
+          margin-bottom: 25px;
+        }
+      }
+      .my-skills {
+        padding: 20px 0px;
+        h2 {
+          text-shadow: 4px 4px 0px $dark-grey;
+          font-size: 30px;
+          font-weight: 400;
+          letter-spacing: 2px;
+        }
+        .icons {
+          padding-top: 20px;
+          gap: 15px;
+          img {
+            width: 55px;
+            filter: drop-shadow(3.5px 3.5px 0px $dark-grey);
+          }
+        }
+      }      
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .about-page {
+    border-radius: 0px 0px 100px 100px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+
+    .phrase-about {
+      width: 94vw;
+      padding: 15px 15px 15px calc(6vw + 15px);
+      margin-right: 6vw;
+      border-radius: 0px 30px 30px 0px;
+      border-top: 3.5px solid $dark-grey;
+      border-right: 3.5px solid $dark-grey;
+      border-bottom: 3.5px solid $dark-grey;
+      box-shadow: 8px 8px 0px 0px $dark-grey, 0px 8px 0px 0px $dark-grey;
+      
+      h2 {
+        font-size: 26px;
+        font-weight: 800;
+        line-height: 35px;
+        letter-spacing: 1.5px;
+      }
+    }
+    .about {
+      margin-top: 10px;
+      padding: 50px 60px 60px 60px;
+      .about-me-box {
+        justify-content: center;
+        flex-direction: row-reverse;
+        .text p {
+            font-size: 22px;
+            font-weight: 650;
+            line-height: 1.5;
+            min-width: 300px;
+            text-indent: 1.5em;
+        }
+        img {
+          width: 400px;
+          margin-left: 40px;
+        }
+      }
+      .my-skills {
+        padding-top: 60px;
+        h2 {
+          text-shadow: 5px 5px 0px $dark-grey;
+          font-size: 40px;
+          font-weight: 400;
+          letter-spacing: 2.5px;
+        }
+        .icons {
+          padding-top: 30px;
+          gap: 20px;
+          img {
+            width: 65px;
+            filter: drop-shadow(4px 4px 0px $dark-grey);
+            cursor: pointer;
+            transition: transform 400ms;
+            &:hover {
+              transform: scale(1.18);
+            }
+          }
+        }
+      }      
+    }
+  }
+}
+
+@media (min-width: 1201px) {
+  .about-page {
+    border-radius: 0px 0px 110px 110px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+
+    .phrase-about {
+      width: 95vw;
+      padding: 15px 15px 15px calc(5vw + 15px);
+      margin-right: 5vw;
+      border-radius: 0px 35px 35px 0px;
+      border-top: 3.5px solid $dark-grey;
+      border-right: 3.5px solid $dark-grey;
+      border-bottom: 3.5px solid $dark-grey;
+      box-shadow: 8px 8px 0px 0px $dark-grey, 0px 8px 0px 0px $dark-grey;
+      
+      h2 {
+        max-width: 1118px;
+        font-size: 26px;
+        font-weight: 800;
+        line-height: 35px;
+        letter-spacing: 1.5px;
+      }
+    }
+    .about {
+      margin-top: 10px;
+      padding: 50px 90px 60px 90px;
+      
+      .about-me-box {
+        justify-content: center;
+        flex-direction: row-reverse;
+        max-width: 1140px;
+        .text p {
+            font-size: 24px;
+            font-weight: 650;
+            line-height: 1.5;
+            min-width: 300px;
+            text-indent: 1.5em;
+        }
+        img {
+          width: 40%;
+          margin-left: 50px;
+        }
+      }
+      .my-skills {
+        padding-top: 60px;
+        max-width: 1140px;
+        h2 {
+          text-shadow: 5px 5px 0px $dark-grey;
+          font-size: 44px;
+          font-weight: 400;
+          letter-spacing: 2.5px;
+        }
+        .icons {
+          padding-top: 30px;
+          gap: 20px;
+          img {
+            width: 75px;
+            filter: drop-shadow(4px 4px 0px $dark-grey);
+            cursor: pointer;
+            transition: transform 400ms;
+            &:hover {
+              transform: scale(1.18);
+            }
+          }
+        }
+      }      
+    }
+  }
+}
