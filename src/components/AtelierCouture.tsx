@@ -12,10 +12,10 @@ export function AtelierCouture() {
           <p className="text">
             Site de moda criado para um atelier de costura,
             desenvolvido com TypeScript, Sass e React. O site é responsivo e possui
-            uma página de contato com um formulário de envio de mensagens.
+            uma página de contato com um formulário para envio de mensagens.
           </p>
           <GithubButton
-            href="https://github.com/KarlaKeurin/project-trybe-futebol-clube"
+            href="https://github.com/KarlaKeurin/atelier-couture"
           />
         </div>
       </div>

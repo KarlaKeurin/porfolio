@@ -15,7 +15,7 @@ export function FutebolClube() {
             consumindo um banco de dados.
           </p>
           <GithubButton
-            href="https://github.com/KarlaKeurin/atelier-couture"
+            href="https://github.com/KarlaKeurin/project-trybe-futebol-clube"
           />
         </div>
         <img className="image" src={ tfc } alt="Atelier Couture" />
