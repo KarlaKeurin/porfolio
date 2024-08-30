@@ -35,7 +35,7 @@ export function AboutPage() {
             </p>
             <p>
               Meu maior objetivo é contribuir para o desenvolvimento de soluções que impactem positivamente
-              o mundo. Eu vejo a tecnologia como um meio de influenciar e transformar a vida das pessoas.
+              o mundo e vejo a tecnologia como um meio de influenciar e transformar a vida das pessoas.
             </p>
           </div>
         </div>
