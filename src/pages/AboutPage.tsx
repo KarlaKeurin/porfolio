@@ -29,14 +29,13 @@ export function AboutPage() {
           <img src={ photoAbout } alt="Foto de Karla Keurin" />
           <div className="text">
             <p>
-              Iniciei nesse mundo da programação em 2022, quando comecei a estudar Desenvolvimento Web Full Stack na
-              Trybe. Estou sempre buscando aprender cada vez mais sobre esse universo. Além de programar,
-              também gosto de desenhar, cozinhar e conhecer novos lugares.
+              Iniciei nesse mundo da programação em 2022, quando comecei a estudar Desenvolvimento
+              Web Full Stack na Trybe. Estou sempre buscando aprender cada vez mais sobre esse
+              universo. Além de codar, também gosto de desenhar, cozinhar e conhecer novos lugares.
             </p>
             <p>
-              Eu vejo a tecnologia como um meio de influenciar e mudar a vida das pessoas e meu objetivo é
-              contribuir para isso, seja desenvolvendo aplicações que facilitem a vida das pessoas ou
-              criando interfaces que proporcionem uma experiência agradável e intuitiva.
+              Meu maior objetivo é contribuir para o desenvolvimento de soluções que impactem positivamente
+              o mundo. Eu vejo a tecnologia como um meio de influenciar e transformar a vida das pessoas.
             </p>
           </div>
         </div>

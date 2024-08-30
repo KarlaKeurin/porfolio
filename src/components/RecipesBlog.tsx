@@ -15,7 +15,7 @@ export function RecipesBlog() {
             para fornecer todas as informações detalhadas das receitas.
           </p>
           <GithubButton
-            href="https://github.com/KarlaKeurin/blog-de-receitas"
+            href="https://github.com/KarlaKeurin/recipes-blog"
           />
         </div>
       </div>
